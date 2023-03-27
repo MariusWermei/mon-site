@@ -1,8 +1,13 @@
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    position: fixed;
 }
 
+.navbar {
+    background-color: gray;
+}
 .panels{
     display: flex;
     height: 100vh;
@@ -24,12 +29,9 @@ html {
    
 }
 .panel:hover{
-    flex:4
+    flex:2
 }
 
-.panel>.titreJeu:hover{
-    opacity: 100%;
-}
 
 .lion{
     background-image: url("../img/img1.jpg");
@@ -48,11 +50,8 @@ html {
     background-image: url("../img/img4.avif");
 
 }
+ 
+.container-fluid {
+    background-color: aqua;
 
-.titreJeu{
-    color: white;
-    font-size: 4em;
-    font-family: 'Roboto';
-    opacity: 0%;
-    transition: opacity 1s;
 }
