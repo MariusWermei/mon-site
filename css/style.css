@@ -10,7 +10,7 @@ html {
 }
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 10px;
 }
@@ -41,28 +41,44 @@ html {
     flex:1.225;
 }
 
+.panel:hover>.btn {
+    opacity: 100%;
+}
 
-.lion{
+
+.valorant{
     background-image: url("../img/img1.jpg");
+    padding-top: 530px;
 }
 
-.hands{
+.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    opacity: 0%;
+    transition: opacity 3s;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.lol{
     background-image: url("../img/img\ 2.jpg");
-  
+    padding-top: 270px;
+    
 
 }
-.eye{
+.bf2{
     background-image: url("../img/img3.jpg");
-
+    padding-top: 530px;
 }
-.road{
+.fortnite{
     background-image: url("../img/img4.avif");
-
+    padding-top: 530px;
 }
  
 
 .footer-dark {
-    padding:50px 0;
+    padding:20px 0;
     color:#f0f9ff;
     background-color:#282d32;
   }
@@ -107,27 +123,5 @@ html {
     margin-bottom:0;
   }
   
-  .footer-dark .item.social {
-    text-align:center;
-  }
   
-  @media (max-width:991px) {
-    .footer-dark .item.social {
-      text-align:center;
-      margin-top:20px;
-    }
-  }
-  
-  
-  .footer-dark .item.social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-dark .copyright {
-    text-align:center;
-    padding-top:24px;
-    opacity:0.3;
-    font-size:13px;
-    margin-bottom:0;
-  }
   
