@@ -1,8 +1,8 @@
 html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    position: sticky;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+    
 }
 
 body {margin: O}
@@ -10,11 +10,11 @@ body {margin: O}
 /* Navbar */
 
 header {
-  position: sticky;
   top: 0;
   background-color: #111;
+  position: sticky;
+  position: -webkit-sticky;
 }
-
 
 .navbar {
   display: flex;
@@ -96,7 +96,6 @@ header {
 .acceuil {
   height: 100vh;
   width: 100vw;
-  
 }
 
 .text {
@@ -107,6 +106,7 @@ header {
 
 .acceuil {
   background-image: url(../img/acceuil.jpg);
+  width: 100%;
 }
 
 .base {
@@ -253,6 +253,7 @@ header {
     align-items: center;
     padding: 125px;
     margin: 0
+
 }
 
 .video a {
