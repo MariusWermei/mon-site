@@ -1,8 +1,8 @@
 html {
    margin: 0;
    padding: 0;
-   scroll-behavior: smooth;
-    
+   scroll-behavior: smooth;    
+   scroll-padding-top: 65px;
 }
 
 body {margin: O}
@@ -13,7 +13,7 @@ header {
   top: 0;
   background-color: #111;
   position: sticky;
-  position: -webkit-sticky;
+  z-index: 1000;
 }
 
 .navbar {
@@ -69,33 +69,13 @@ header {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 100%;
-    z-index: 1;
-  }
+/* Hero */
 
-  .navbar-links li {
-    margin: 1rem 0;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-}
-/* Acceuil */
-
-.acceuil {
+.welcome {
   height: 100vh;
   width: 100vw;
+  background-image: url(../img/acceuil.jpg);
+  width: 100%;
 }
 
 .text {
@@ -104,24 +84,19 @@ header {
   background-position: center;
   }
 
-.acceuil {
-  background-image: url(../img/acceuil.jpg);
-  width: 100%;
-}
-
 .base {
   color: #fff;
   font-family: "Beaufort for LOL", serif;
-  font-size: 84px;
+  font-size: 64px;
   font-weight: 600;
   letter-spacing: 0.1em;
   font-style: italic;
   text-align: center; 
-  
+  padding-top: 60px;
 }
 
-.bienvenue {
-  padding-top: 100px;
+.welcome2 {
+  padding-top: 10px;
   color: #fff;
   font-family: "Beaufort for LOL", serif;
   font-size: 2em;
@@ -131,7 +106,7 @@ header {
   text-align: center; 
 }
 
-.acceuil p {
+.welcome p {
   max-width: 660px;
   margin: 20px auto 0px;
   text-align: center;
@@ -142,7 +117,7 @@ header {
   cursor: default;
 }
 
-/* Styles de la section Gameplay */
+/* Gameplay */
 
 .gameplay {
   background-color: rgba(0, 0, 0, 0.116);
@@ -198,7 +173,6 @@ header {
   background-color: rgba(0, 0, 0, 0.116);
   transition: background-color 0.3s ease;
   color: black;
-
 }
 
 .gameplay-item a:hover {
@@ -216,7 +190,7 @@ header {
   margin-top: -2px;
   color: white;
   background: #111;
-  }
+}
 
 .textrewards {
   color: #fff;
@@ -414,12 +388,6 @@ header {
 
 .footer-dark .item.text {
   margin-bottom:36px;
-}
-
-@media (max-width:767px) {
-  .footer-dark .item.text {
-    margin-bottom:0;
-  }
 }
 
 .footer-dark .item.text p {

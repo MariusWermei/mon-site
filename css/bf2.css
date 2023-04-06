@@ -3,6 +3,7 @@ html {
     padding: 0;
     scroll-behavior: smooth;
     position: sticky;
+    scroll-padding-top: 65px;
 }
 
 body {margin: O}
@@ -13,6 +14,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #111;
+  z-index: 1000;
 }
 
 
@@ -69,11 +71,13 @@ header {
   position: relative;
 }
 
-/* Acceuil */
+/* Hero */
 
-.acceuil {
+.welcome {
   height: 100vh;
   width: 100vw; 
+  background-image: url(../img/bf2acc.jpg);
+  width: 100%;
 }
 
 .text {
@@ -82,12 +86,7 @@ header {
   background-position: center;
   }
 
-.acceuil {
-  background-image: url(../img/bf2acc.jpg);
-  width: 100%;
-}
-
-.acceuil p {
+.welcome p {
     max-width: 660px;
     margin: 20px auto 0px;
     text-align: center;
@@ -98,7 +97,7 @@ header {
     cursor: default;
 }
 
-.bienvenue {
+.welcome2 {
   padding-top: 600px;
   color: #fff;
   font-family: "Beaufort for LOL", serif;
@@ -108,10 +107,10 @@ header {
   text-align: center; 
 }
 
-/* Gameplay */
+/* Multijoueur */
 
 .battles {
-    background-image: url(../img/bf2fondetoile.jpeg);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,6 +123,8 @@ header {
     text-align: center;
     margin-bottom: 30px;
     font-family: "Beaufort for LOL", serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
   
 .textbattles p {
@@ -132,6 +133,7 @@ header {
     margin-bottom: 60px;
     text-align: center;
     font-family: "Spiegel", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.1em;
 }
   
 .battles__images {
@@ -184,46 +186,210 @@ header {
     background-color: #111;
     color: white;
     margin-top: 20px;
-  }
+}
   
   .button-primary:hover {
     background-color: darken(var(--primary-color), 10%);
-  }
+}
   
-  .button-secondary {
+  .divbutton .button-secondary {
     background-color: #111;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     margin-top: 20px;
-  }
+}
   
-  .button-secondary:hover {
+  .divbutton .button-secondary:hover {
     background-color: var(--secondary-color);
     color: white;
+}
+
+  /* Héros */
+
+  .heros {
+    background-color: #000;
+    color: #fff;
+    padding: 70px 0;
+  }
+  
+  .introtextspells h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Beaufort for LOL", serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  
+  .introtextspells p {
+    font-size: 24px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Beaufort for LOL", sans-serif;
+  }
+  
+  .heros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .spells {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .spells:hover {
+    opacity: 1;
+  }
+  
+  .spells h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "Beaufort for LOL", serif;
+  }
+  
+  .spells p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-decoration: underline 2px;
+    
+  }
+  
+  .spells ul {
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .spells li {
+    font-size: 14px;
+    margin-bottom: 3px;
   }
 
-  /* Esport */
+  .divbuttonspells {
+    text-align: center;
+}
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .divbuttonspells .button-secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--secondary-color);
+    margin-top: 60px;
+}
+  
+  .divbuttonspells .button-secondary:hover {
+    background-color: black;
+    color: white;
+}
+ 
+ /* Combats spaciaux */
+
+ #spatialbattles {
+  background-image: url(../img/bf2spatial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.spatialsection {
+  text-align: left;
+  box-sizing: content-box;
+  width: 26%;
+  padding-top: 300px;
+  padding-right: 976px; /* J'ai essayé par tout les moyens de faire mon positionnement avec display : flex mais je n'y suis pas parvenu donc j'ai fait avec du padding  */
+  padding-bottom: 200px;
+  padding-left: 280px;
+}
+
+.spatialsection h3 {
+letter-spacing: 0.1rem;
+}
+
+.spatialsection h2 {
+font-size: 50px;
+font-family: "Beaufort for LOL", sans-serif;
+font-weight: 700;
+}
+
+.spatialsection p {
+font-family: "Beaufort for LOL", sans-serif;
+font-weight: 600;
+font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.spatialsection .button-secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid var(--secondary-color);
+  margin-top: 30px;
+
+}
+
+.spatialsection .button-secondary:hover {
+  background-color: black;
+  color: white;
+}
 
   /* Video gameplay */
   
   .video {
-      background-image: url("../img/fondvidéobf2.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 125px;
-      margin: 0
-  }
+    background-image: url("../img/fondvidéobf2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 125px;
+     margin: 0
+}
   
-  .video a {
+  .video .button {
     position : absolute;
-    bottom : 4%;
-  }
-
-
+    bottom :5%;
+    background-color: #fff;
+    color: #111;
+}
 
 /* Footer */
 
@@ -260,12 +426,6 @@ header {
 
 .footer-dark .item.text {
   margin-bottom:36px;
-}
-
-@media (max-width:767px) {
-  .footer-dark .item.text {
-    margin-bottom:0;
-  }
 }
 
 .footer-dark .item.text p {

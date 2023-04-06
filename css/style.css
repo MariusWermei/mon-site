@@ -1,27 +1,28 @@
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    position: fixed;
-}
+/* Navbar */
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.116);
-}
+header {
+    top: 0;
+    background-color: #111;
+    position: sticky;
+    z-index: 1000;
+  }
 
-.navbar-brand {
+.textgk {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
-
+/* Panels Acceuil (Hero) */
 
 .panels{
     display: flex;
     height: 75vh;
-    width: 100vw;
+    width: 100%;
 }
+
 .panel{
     height: 100%;
     flex:1;
@@ -29,14 +30,11 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: flex;
-
     justify-content: center;
-
-    align-items: center;
-   
+    align-items: center;   
 }
+
 .panel:hover{
     flex:1.225;
 }
@@ -61,34 +59,33 @@ html {
     background-color: rgba(0, 0, 0, 0.267);
 }
 
-.lol{
+.lol {
     background-image: url("../img/img\ 2.jpg");
     padding-top: 270px;
-    
-
 }
-.bf2{
+
+.bf2 {
     background-image: url("../img/img3.jpg");
     padding-top: 530px;
 }
+
 .fortnite{
     background-image: url("../img/img4.avif");
     padding-top: 530px;
 }
  
-
 .footer-dark {
     padding:20px 0;
     color:#f0f9ff;
     background-color:#282d32;
-  }
+}
   
   .footer-dark h3 {
     margin-top:0;
     margin-bottom:12px;
     font-weight:bold;
     font-size:16px;
-  }
+}
   
   .footer-dark ul {
     padding:0;
@@ -96,32 +93,26 @@ html {
     line-height:1.6;
     font-size:14px;
     margin-bottom:0;
-  }
+}
   
   .footer-dark ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.6;
-  }
+}
   
   .footer-dark ul a:hover {
     opacity:0.8;
-  }
+}
   
   .footer-dark .item.text {
     margin-bottom:36px;
-  }
-  
-  @media (max-width:767px) {
-    .footer-dark .item.text {
-      margin-bottom:0;
-    }
-  }
-  
+}
+    
   .footer-dark .item.text p {
     opacity:0.6;
     margin-bottom:0;
-  }
+}
   
   
   
